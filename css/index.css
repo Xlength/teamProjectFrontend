@@ -1,0 +1,30 @@
+/* 样式文件 */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    color: #007bff;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.vehicle-card {
+    padding: 15px;
+}
+
+button {
+    width: 100%;
+}
+
+#myChart {
+    width: 100%;
+    height: 400px;
+}

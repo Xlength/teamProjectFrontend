@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle rental system</title>
+    <!-- 引入Bootstrap 样式 -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入自定义样式 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+        <!-- 车辆列表页面 -->
+        <div id="vehicle-list-page" class="mt-5" style="display: none;">
+            <h3>可租车辆列表</h3>
+            <div class="row" id="vehicle-list"></div>
+        </div>
+
+        <!-- 管理人员报告页面 -->
+        <div id="report-page" class="mt-5" style="display: none;">
+            <h3>车辆管理报告</h3>
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <!-- 用户资料页面 -->
+        <div id="profile-page" class="mt-5" style="display: none;">
+            <h3>个人资料</h3>
+            <form id="profile-form">
+                <div class="mb-3">
+                    <label for="username" class="form-label">用户名</label>
+                    <input type="text" class="form-control" id="username">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">电话号码</label>
+                    <input type="text" class="form-control" id="phone">
+                </div>
+                <button type="submit" class="btn btn-primary">更新资料</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 引入Bootstrap和Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- 引入自定义脚本 -->
+    <script src="app.js"></script>
+</body>
+</html>
